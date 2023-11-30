@@ -34,3 +34,20 @@ Write packages
 Install packages
 
     pip install -r requirements.txt
+
+## Download and prepare data
+
+Make sure to be in the venv environment and then run prepare_data.py
+
+```bash
+.\.venv\Scripts\activate
+python prepare_data.py
+```
+
+## Use data
+
+Read the dataset
+
+```python
+df = pd.read_json("data/cleaned.json")
+```
