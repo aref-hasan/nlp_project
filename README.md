@@ -49,5 +49,5 @@ python prepare_data.py
 Read the dataset
 
 ```python
-df = pd.read_json("data/cleaned.json")
+df = pd.read_json("data/dataset_english.json")
 ```
