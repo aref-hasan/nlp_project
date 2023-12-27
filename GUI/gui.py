@@ -7,7 +7,8 @@
 
 
 import tkinter as tk
-import tksvg
+from tkinter import PhotoImage
+import PIL
 
 def myClick():
     global processed_flag, entry, window, output_label, output_entry, error_label
@@ -80,14 +81,21 @@ def main():
                      font=('Arial', 32, 'bold'))
     label.pack(pady=10)
 
-    # Load SVG-file
-    svg_image = tksvg.SvgImage(file="C:\\Users\\Franziska\\OneDrive\\02-Studium\\5.Semester\\NLP\\nlp_project\\GUI\\lock-symbo.svg")
-    
-    # Create a Tkinter Canvas and load the SVG
-    canvas = tk.Label(window, 
-                      image=svg_image,
+    # Load PNG-file
+    png_path   = PhotoImage(file="GUI\lock_2.png")
+    png_image = png_path
+
+    # Resize the image to 10% of the original size using subsample
+    width, height = png_image.width(), png_image.height()
+    scaled_image = png_image.subsample(int(width * 0.5), int(height * 0.5))
+
+
+    # Create a Tkinter Label and set the image
+    canvas = tk.Label(window,
+                      image=scaled_image,
                       width=40,
-                      height=130)
+                      height=30)
+    canvas.image = png_image  # Referenz behalten, um das Bild korrekt anzuzeigen
     canvas.pack(pady=(0, 10), fill="both", expand=True)
 
     # Create Input
