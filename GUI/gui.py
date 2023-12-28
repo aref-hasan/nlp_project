@@ -8,7 +8,6 @@
 
 import tkinter as tk
 from tkinter import PhotoImage
-import PIL
 import json
 
 def myClick():
