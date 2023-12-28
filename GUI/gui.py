@@ -9,6 +9,7 @@
 import tkinter as tk
 from tkinter import PhotoImage
 import PIL
+import json
 
 def myClick():
     global processed_flag, entry, window, output_label, output_entry, error_label
@@ -16,11 +17,10 @@ def myClick():
     # Check if the input field is not empty and does not consist of only spaces
     input_text = entry.get().strip()
     
-    # Initialize input_pii
-    input_pii = None
-
     if not processed_flag and len(input_text) > 0:
-        input_pii = input_text
+        input_data = {'input_text': input_text}
+        with open('input_data.json', 'w') as json_file:
+            json.dump(input_data, json_file)
 
         # Display the found PII
         output_label = tk.Label(window,
@@ -32,7 +32,7 @@ def myClick():
 
         output_entry = tk.Entry(window,
                                 width=40)
-        output_entry.insert(0, input_pii)
+        output_entry.insert(0, input_text)
         output_entry.pack(pady=10)
 
         processed_flag = True
@@ -81,14 +81,13 @@ def main():
                      font=('Arial', 32, 'bold'))
     label.pack(pady=10)
 
-    # Load PNG-file
-    png_path   = PhotoImage(file="GUI\lock_2.png")
+    '''# Load PNG-file
+    png_path   = tk.PhotoImage(file="lock_2.png")
     png_image = png_path
 
     # Resize the image to 10% of the original size using subsample
     width, height = png_image.width(), png_image.height()
     scaled_image = png_image.subsample(int(width * 0.5), int(height * 0.5))
-
 
     # Create a Tkinter Label and set the image
     canvas = tk.Label(window,
@@ -96,7 +95,7 @@ def main():
                       width=40,
                       height=30)
     canvas.image = png_image  # Referenz behalten, um das Bild korrekt anzuzeigen
-    canvas.pack(pady=(0, 10), fill="both", expand=True)
+    canvas.pack(pady=(0, 10), fill="both", expand=True)'''
 
     # Create Input
     input_label = tk.Label(window,
