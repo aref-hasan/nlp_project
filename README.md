@@ -1,6 +1,6 @@
 ## nlp_project
 
-a NLP project by students at The Baden-Württemberg Cooperative State University (DHBW) Mannheim.
+a NLP project by students at The Baden-Württemberg Cooperative State University (DHBW) Mannheim, Germany.
 
 Personally Identifiable Information (PII) detection in text input using the following dataset:
 https://huggingface.co/datasets/ai4privacy/pii-masking-200k.
