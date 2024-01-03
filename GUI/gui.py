@@ -81,7 +81,7 @@ def main():
     label.pack(pady=10)
 
     '''# Load PNG-file
-    png_path   = tk.PhotoImage(file="lock_2.png")
+    png_path   = tk.PhotoImage(file="src/lock_2.png")
     png_image = png_path
 
     # Resize the image to 10% of the original size using subsample
