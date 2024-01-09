@@ -20,5 +20,14 @@ def use_spacy_v2(sentence):
         print("No PII entities detected.")
 
 # Example usage
-sentence = "Register for our 'Male and Preventive Medicine' webinar at 4 o'clock. Proceeds go to Provence-Alpes-Côte d'Azur public health initiatives. Donate to 0x4a3ae4ddfef27a5ca873f86f408a6f085bc1dd74."
-use_spacy_v2(sentence)
+# Specify the path to the JSON file you want to import
+file_path = "input_data.json"
+
+# Open and read the JSON file
+with open(file_path, 'r') as json_file:
+    imported_data = json.load(json_file)
+
+# Access the imported data
+input_text = imported_data.get('input_text', '')
+
+use_spacy_v2(input_text)
