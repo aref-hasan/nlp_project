@@ -2,8 +2,10 @@ import spacy
 import json
 
 def use_spacy_v2(sentence):
-    # Load your trained model
-    nlp = spacy.load("/Users/nikyakovlev/nlp_project/spacy/spacy_v2")
+    # Load trained model
+    nlp = spacy.load("/Users/nikyakovlev/nlp_project/backend/model")
+    
+    #nlp = spacy.load("../backend/model")
 
     # Process the sentence
     doc = nlp(sentence)
@@ -30,4 +32,5 @@ with open(file_path, 'r') as json_file:
 # Access the imported data
 input_text = imported_data.get('input_text', '')
 
+#function
 use_spacy_v2(input_text)

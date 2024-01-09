@@ -2,10 +2,12 @@ import spacy
 import json
 
 def use_spacy_v2_cl():
-    # Load your trained model
-    nlp = spacy.load("/Users/nikyakovlev/nlp_project/spacy/spacy_v2")
+    # Load trained model
+    nlp = spacy.load("/Users/nikyakovlev/nlp_project/backend/model")
 
-    # Ask for a sentence input from the command line
+    #nlp = spacy.load("../backend/model")
+
+    # a sentence input from the command line
     sentence = input("Enter a sentence to analyze for PII: ")
 
     # Process the sentence
@@ -22,5 +24,5 @@ def use_spacy_v2_cl():
     else:
         print("No PII entities detected.")
 
-# Call the function
+#function
 use_spacy_v2_cl()
