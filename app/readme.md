@@ -1,3 +1,7 @@
+install pyinstaller with
+
+    pip install pyinstaller
+
 If app.spec doesn't exist, run: 
     
     pyinstaller --onedir --windowed app.py
