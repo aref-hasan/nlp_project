@@ -1,8 +1,9 @@
 import spacy
 import json
+from typing import List, Tuple
 
 
-def use_spacy_v2(sentence):
+def use_spacy_v2(sentence: str) -> (List[Tuple[str, int, int, str]], bool):
     # Load trained model
     nlp = spacy.load("./model")
 
@@ -16,12 +17,12 @@ def use_spacy_v2(sentence):
 
     # Check if any PII entities were detected
     if pii_entities:
-        return pii_entities
+        return pii_entities, True
         # output = [(sentence, {"entities": pii_entities})]
         # json_output = json.dumps(output, indent=4)
         # print(json_output)
     else:
-        return None
+        return None, False
         # print("No PII entities detected.")
 
 
