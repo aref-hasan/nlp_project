@@ -135,8 +135,8 @@ class Gui:
         # Define headings
         for col in columns:
             self.output_table.heading(col, text=col.title())
-        # Insert data
 
+        # Insert data
         for pii_entity in pii_entries:
             self.output_table.insert(
                 "",
@@ -146,4 +146,5 @@ class Gui:
         self.output_table.pack(expand=True, fill="both")
 
     def set_error(self, error: bool):
+        """This method is used to set the error indicator."""
         self.error_label.pack(pady=10) if error else self.error_label.pack_forget()

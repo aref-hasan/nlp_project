@@ -9,11 +9,16 @@ class App:
         self.model = SpacyModel()
         print("Model loaded")
 
-        self.gui = Gui(predict=self.predict, clear=self.clear)
+        self.gui = Gui(predict=self.predict, clear=self.reset_gui)
         print("GUI initialised")
         self.gui.run()
 
     def predict(self):
+        """This method is called when the predict button is pressed.
+        It first resets the GUI.
+        Then handles empty input after which it calls the predict method of the model.
+        According to the result, it calls the GUI to show the PII entities or a message that no entities were found.
+        """
         # Reset GUI by destroying previous output and removing error indicator
         self.gui.destroy_output()
         self.gui.set_error(False)
@@ -38,7 +43,11 @@ class App:
             pii_entries=pii_entities,
         )
 
-    def clear(self):
+    def reset_gui(self):
+        """This method is called when the clear button is pressed.
+        It clears the input field removes the output label and table and removes the error indicator.
+        This way the GUI is reset to its initial state.
+        """
         self.gui.clear_input()
         self.gui.destroy_output()
         self.gui.set_error(False)
