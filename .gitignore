@@ -1,4 +1,8 @@
-.venv
-data
-.vscode
+.venv/
+data/
+.vscode/
 .ipynb_checkpoint/
+dist/
+build/
+
+__pycache__/
