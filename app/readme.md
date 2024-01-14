@@ -1,3 +1,5 @@
+If app.spec doesn't exist, run: 
+    
     pyinstaller --onedir --windowed app.py
 
 include the model:
