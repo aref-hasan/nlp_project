@@ -1,18 +1,10 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 
-a = Analysis(
-    ['app.py'],
-    pathex=[],
-    binaries=[],
-   datas=[('backend/model', 'model')],
-    hiddenimports=[],
-    hookspath=[],
-    hooksconfig={},
-    runtime_hooks=[],
-    excludes=[],
-    noarchive=False,
-)
+a = Analysis(['app.py'],
+        datas=[('backend/model', 'model')],
+        )
+
 pyz = PYZ(a.pure)
 
 exe = EXE(
@@ -40,4 +32,10 @@ coll = COLLECT(
     upx=True,
     upx_exclude=[],
     name='app',
+)
+app = BUNDLE(
+    coll,
+    name='app.app',
+    icon=None,
+    bundle_identifier=None,
 )
