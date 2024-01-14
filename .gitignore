@@ -2,5 +2,7 @@
 data/
 .vscode/
 .ipynb_checkpoint/
-dist
-build
+dist/
+build/
+
+__pycache__/
