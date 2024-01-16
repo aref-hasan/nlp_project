@@ -1,0 +1,1 @@
+../../../Resources/spacy/ml/parser_model.pyx

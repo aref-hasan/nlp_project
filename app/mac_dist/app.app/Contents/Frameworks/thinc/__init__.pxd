@@ -1,0 +1,1 @@
+../../Resources/thinc/__init__.pxd

@@ -1,0 +1,13 @@
+{
+  "shell_port": 49854,
+  "iopub_port": 49855,
+  "stdin_port": 49856,
+  "control_port": 49858,
+  "hb_port": 49857,
+  "ip": "127.0.0.1",
+  "key": "0a885efe-8c3ec90c4364aaf7b02a5bc7",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/Users/arefhasan/Documents/NLP/nlp_project/playground/flair_model.ipynb"
+}

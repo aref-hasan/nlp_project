@@ -1,0 +1,1 @@
+../../../Resources/thinc/backends/numpy_ops.pxd
