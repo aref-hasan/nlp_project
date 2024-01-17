@@ -51,8 +51,8 @@ class Gui:
             text="Find PII",
             width=10,
             height=1,
-            bg="black",
-            fg="white",
+            #bg="black",
+            #fg="white",
             font=("Arial", 16, "bold"),
             command=predict,
         )
@@ -63,8 +63,8 @@ class Gui:
             text="Clear",
             width=10,
             height=1,
-            bg="black",
-            fg="white",
+            #bg="black",
+            #fg="white",
             font=("Arial", 16, "bold"),
             command=clear,
         )
