@@ -1,0 +1,1 @@
+../../../Resources/spacy/pipeline/trainable_pipe.pxd

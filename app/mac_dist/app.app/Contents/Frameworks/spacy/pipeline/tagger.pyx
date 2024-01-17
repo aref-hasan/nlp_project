@@ -1,0 +1,1 @@
+../../../Resources/spacy/pipeline/tagger.pyx
