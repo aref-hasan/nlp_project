@@ -109,6 +109,7 @@ class Gui:
         output_label_text: str,
         pii_entries: list[tuple[str, str, int, int]] | None = None,
     ):
+
         """This method is used to set the output label and table.
 
         Args:
