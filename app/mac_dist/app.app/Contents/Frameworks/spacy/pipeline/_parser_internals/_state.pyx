@@ -1,0 +1,1 @@
+../../../../Resources/spacy/pipeline/_parser_internals/_state.pyx

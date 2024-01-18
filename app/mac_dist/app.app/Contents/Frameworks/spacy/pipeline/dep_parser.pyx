@@ -1,0 +1,1 @@
+../../../Resources/spacy/pipeline/dep_parser.pyx

@@ -1,0 +1,1 @@
+../../../Resources/spacy/training/gold_io.pyx

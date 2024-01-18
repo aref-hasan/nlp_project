@@ -1,0 +1,1 @@
+../../../Resources/spacy/pipeline/morphologizer.pyx

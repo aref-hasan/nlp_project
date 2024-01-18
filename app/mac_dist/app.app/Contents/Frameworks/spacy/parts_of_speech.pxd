@@ -1,0 +1,1 @@
+../../Resources/spacy/parts_of_speech.pxd

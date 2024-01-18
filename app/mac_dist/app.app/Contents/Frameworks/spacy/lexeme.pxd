@@ -1,0 +1,1 @@
+../../Resources/spacy/lexeme.pxd
