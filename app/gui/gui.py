@@ -51,6 +51,8 @@ class Gui:
             text="Find PII",
             width=10,
             height=1,
+            bg="black",
+            fg="white",
             #bg="black",
             #fg="white",
             font=("Arial", 16, "bold"),
@@ -63,6 +65,8 @@ class Gui:
             text="Clear",
             width=10,
             height=1,
+            bg="black",
+            fg="white",
             #bg="black",
             #fg="white",
             font=("Arial", 16, "bold"),
@@ -109,6 +113,7 @@ class Gui:
         output_label_text: str,
         pii_entries: list[tuple[str, str, int, int]] | None = None,
     ):
+
         """This method is used to set the output label and table.
 
         Args:
