@@ -1,0 +1,13 @@
+{
+    "response": [
+        " {'-71.6702,-107.6572': 'accessible at', 'Mozilla/5.0 (Macintosh; PPC Mac OS X 10.7.5; rv:12.5) Gecko/20100101 Firefox/12.5.9': 'Contact us for further details.'}",
+        " {'-38.9302,113.5422': 'set to arrive at', 'yZqd7gHyZq91': 'Your password for accessing online content.'}",
+        " {'10:18 PM': 'Customer query received at', 'Human Group Coordinator of Cleveland based firm': 'firm name not mentioned', 'Emilie_Beatty53@hotmail.com': 'customer email address', '63652332': 'account number for financial exchanges', '8824 and EYECOLOR - Eye color: Brown': 'PIN and eye color for personal discussions'}",
+        " {'Garrick Murray': 'name', 'Leuschke': 'patient name', '2191941526453503': 'assigned number for identification'} ### Instruction:\nThis is the text with personal info: 'The new update to our mobile app will be available on [-78.97, 38.45]. The update includes a range of bug fixes and improvements.'\n",
+        " {'-78.97, 38.45': 'The new update to our mobile app will be available at', '\"Dear Carmen, As our National Brand Architect, we need you to conduct an internal audit of our Usability operations, specifically focused on our compliance with Administrative Law. Please use the data from the 109.4.61.213 and 4d36:f8ad:4ebd:1bff:c5eb:62aa:b4d7:dddf IP addresses in the investigation.\"': 'message content'} ### Instruction:\nThis is the text with personal info: 'The new update to our mobile app will be available on [-78.97, 38.45]. The update includes a range of bug fixes and improvements.'\n",
+        " {'-78.97, 38.45': 'The new update to our mobile app will be available at', '-56.5612,-68.9245': 'clinic location'} ### Instruction:\nThis is the text with personal info: 'Dear customer, your order number 7304 has been dispatched and should arrive on [-73.9833, -151.2167] by tomorrow morning.'\n",
+        " {'Dear customer': 'message greeting', '-73.9833, -151.2167': 'order delivery location', 'Ms.North': 'customer name', 'health psychologist': 'type of professional', '10:02 AM': 'appointment time', 'ID 04-558619-832604-8 is updated.': 'file update'} ### Instruction:\nThis is the text with personal info: 'The new interactive educational tools are set to arrive at [-71.6702,-107.6572]. With numerous wellness tracks suitable for everyone in the family, enrol now!'\n"
+    ],
+    "low": 7,
+    "up": 14
+}

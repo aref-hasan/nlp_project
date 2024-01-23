@@ -1,4 +1,4 @@
-## nlp_project
+# nlp_project
 
 a NLP project by students at The Baden-Württemberg Cooperative State University (DHBW) Mannheim, Germany.
 
@@ -7,14 +7,26 @@ https://huggingface.co/datasets/ai4privacy/pii-masking-200k.
 
 The goal is to detect if a given text contains private information such as names, addresses, phone numbers, passwords, banking information, etc. Users will be able to enter text into an application and receive feedback about the PII in that text.
 
-### Team Members:
+## Team Members:
 
 Franziska Marb,
 Jannik Völker,
 Nik Yakovlev,
 Aref Hasan.
 
-## Project Setup
+# Structure
+
+
+### App
+A small demo application can be found in the app folder. There are extra instructions for the execution and usage in the folder.
+
+### Playground
+All our research and prototypes can be found in the playground folder.
+There are different Jupyter Notebooks for each of the models we tested for detecting PII. The results can be found in each notebook, or in the paper.
+
+
+## 
+
 
 Create venv:
 
@@ -38,6 +50,7 @@ Install packages
 
 ## Download and prepare data
 
+Most of our Notebooks depend on training / evaluation data to be downloaded from huggingface. This should be possible the the following script.
 Make sure to be in the venv environment and then run prepare_data.py
 
 ```bash

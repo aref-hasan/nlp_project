@@ -1,9 +1,13 @@
 # %%
 import pandas as pd
+from pathlib import Path
 
 from huggingface_hub import hf_hub_download
 
 import ast
+
+# %%
+data_dir: Path = Path("data")
 
 # %%
 # https://huggingface.co/datasets/ai4privacy/pii-masking-200k
@@ -16,7 +20,7 @@ hf_hub_download(
     repo_id="ai4privacy/pii-masking-200k",
     filename="german_pii_52k.jsonl",
     repo_type="dataset",
-    local_dir="data",
+    local_dir=data_dir,
 )
 print("Finished downloading german dataset.")
 # Download the english dataset to the local data folder
@@ -25,9 +29,18 @@ hf_hub_download(
     repo_id="ai4privacy/pii-masking-200k",
     filename="english_pii_43k.jsonl",
     repo_type="dataset",
-    local_dir="data",
+    local_dir=data_dir,
 )
-
+print("Finished downloading english dataset.")
+# Download the pii classes dataset to the local data folder
+print("Downloading pii classes dataset.")
+hf_hub_download(
+    repo_id="ai4privacy/pii-masking-200k",
+    filename="pii_class_counts.json",
+    repo_type="dataset",
+    local_dir=data_dir,
+)
+print("Finished downloading pii classes dataset.")
 # %%
 # read both datasets from json
 # SOURCE https://pandas.pydata.org/docs/reference/api/pandas.read_json.html
@@ -84,8 +97,8 @@ df_english.tokenised_text = df_english.tokenised_text.apply(
 # write the prepared datasets to json
 # SOURCE https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html
 print("Writing german dataset.")
-df_german.to_json("data/dataset_german.json")
+df_german.to_json(data_dir / Path("dataset_german.json"))
 print("Writing english dataset.")
-df_english.to_json("data/dataset_english.json")
+df_english.to_json(data_dir / Path("dataset_english.json"))
 
 print("Finished")
