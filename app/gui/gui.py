@@ -38,7 +38,7 @@ class Gui:
             font=("Arial", 24, "bold"),
         )
         # Create input field
-        self.input_entry = tk.Entry(self.window, width=40)
+        self.input_entry = tk.Text(self.window, width=40, height=7)
 
         # Create a label for the error indicator (red exclamation mark)
         self.error_label = tk.Label(
@@ -53,8 +53,8 @@ class Gui:
             height=1,
             bg="black",
             fg="white",
-            #bg="black",
-            #fg="white",
+            # bg="black",
+            # fg="white",
             font=("Arial", 16, "bold"),
             command=predict,
         )
@@ -67,8 +67,8 @@ class Gui:
             height=1,
             bg="black",
             fg="white",
-            #bg="black",
-            #fg="white",
+            # bg="black",
+            # fg="white",
             font=("Arial", 16, "bold"),
             command=clear,
         )
@@ -95,11 +95,11 @@ class Gui:
         Returns:
             str: Returns the text from the input field.
         """
-        return self.input_entry.get()
+        return self.input_entry.get("1.0", "end-1c")
 
     def clear_input(self):
         """Clears the input field."""
-        self.input_entry.delete(0, "end")
+        self.input_entry.delete("1.0", "end")
 
     def destroy_output(self):
         """Destroys the output label and table."""
@@ -113,7 +113,6 @@ class Gui:
         output_label_text: str,
         pii_entries: list[tuple[str, str, int, int]] | None = None,
     ):
-
         """This method is used to set the output label and table.
 
         Args:
