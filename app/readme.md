@@ -1,3 +1,7 @@
+# Get an already compiled Mac App
+The github repo contains an already compiled Mac app in the folder app/mac_app.
+https://github.com/aref-hasan/nlp_project
+
 # Run the App
 The app can be run in a python environment.
 All necessary dependencies should be included in the requirements.txt
