@@ -38,7 +38,7 @@ class Gui:
             font=("Arial", 24, "bold"),
         )
         # Create input field
-        self.input_entry = tk.Text(self.window, width=50, height=7,font=("Arial", 16))
+        self.input_entry = tk.Text(self.window, width=50, height=7, font=("Arial", 16))
 
         # Create a label for the error indicator (red exclamation mark)
         self.error_label = tk.Label(
