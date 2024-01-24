@@ -24,7 +24,7 @@ class Gui:
         self.welcome_lbl = tk.Label(
             self.window,
             text="Your PII Detector",
-            width=40,
+            width=50,
             height=2,
             font=("Arial", 32, "bold"),
         )
@@ -33,12 +33,12 @@ class Gui:
         self.input_label = tk.Label(
             self.window,
             text="Enter your text:",
-            width=40,
+            width=50,
             height=1,
             font=("Arial", 24, "bold"),
         )
         # Create input field
-        self.input_entry = tk.Text(self.window, width=40, height=7)
+        self.input_entry = tk.Text(self.window, width=50, height=7,font=("Arial", 16))
 
         # Create a label for the error indicator (red exclamation mark)
         self.error_label = tk.Label(
@@ -116,7 +116,7 @@ class Gui:
         self.output_label = tk.Label(
             self.window,
             text=output_label_text,
-            width=40,
+            width=50,
             height=1,
             font=("Arial", 24, "bold"),
         )
