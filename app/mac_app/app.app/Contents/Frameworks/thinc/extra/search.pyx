@@ -1,0 +1,1 @@
+../../../Resources/thinc/extra/search.pyx

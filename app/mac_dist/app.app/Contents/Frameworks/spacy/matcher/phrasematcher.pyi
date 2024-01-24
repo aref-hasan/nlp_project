@@ -1,1 +1,0 @@
-../../../Resources/spacy/matcher/phrasematcher.pyi

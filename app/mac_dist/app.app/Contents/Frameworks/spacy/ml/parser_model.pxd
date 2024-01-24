@@ -1,1 +1,0 @@
-../../../Resources/spacy/ml/parser_model.pxd

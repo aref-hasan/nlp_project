@@ -1,1 +1,0 @@
-../../../Resources/spacy/matcher/dependencymatcher.pyi

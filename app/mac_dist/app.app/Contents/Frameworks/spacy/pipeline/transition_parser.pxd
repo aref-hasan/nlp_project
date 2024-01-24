@@ -1,1 +1,0 @@
-../../../Resources/spacy/pipeline/transition_parser.pxd

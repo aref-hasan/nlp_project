@@ -1,10 +1,18 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 
-a = Analysis(['app.py'],
-        datas=[('backend/model', 'model')],
-        )
-
+a = Analysis(
+    ['app.py'],
+    pathex=[],
+    binaries=[],
+    datas=[('backend/model', 'model')],
+    hiddenimports=[],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=[],
+    noarchive=False,
+)
 pyz = PYZ(a.pure)
 
 exe = EXE(

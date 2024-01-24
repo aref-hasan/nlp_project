@@ -1,1 +1,0 @@
-../../../../Resources/spacy/pipeline/_parser_internals/ner.pxd

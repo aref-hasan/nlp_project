@@ -1,0 +1,1 @@
+../../Resources/spacy/strings.pyx

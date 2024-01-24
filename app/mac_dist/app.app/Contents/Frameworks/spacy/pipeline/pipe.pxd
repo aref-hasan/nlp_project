@@ -1,1 +1,0 @@
-../../../Resources/spacy/pipeline/pipe.pxd

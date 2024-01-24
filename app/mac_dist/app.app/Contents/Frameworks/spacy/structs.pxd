@@ -1,1 +1,0 @@
-../../Resources/spacy/structs.pxd

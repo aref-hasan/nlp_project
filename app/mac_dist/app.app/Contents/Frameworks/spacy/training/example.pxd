@@ -1,1 +1,0 @@
-../../../Resources/spacy/training/example.pxd

@@ -1,1 +1,0 @@
-../../Resources/spacy/__init__.pxd

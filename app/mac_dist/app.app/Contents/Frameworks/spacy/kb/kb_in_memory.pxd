@@ -1,1 +1,0 @@
-../../../Resources/spacy/kb/kb_in_memory.pxd

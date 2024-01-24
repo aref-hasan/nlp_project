@@ -1,1 +1,0 @@
-../../../Resources/spacy/tokens/token.pyi

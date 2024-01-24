@@ -1,1 +1,0 @@
-../../../Resources/spacy/training/alignment_array.pxd

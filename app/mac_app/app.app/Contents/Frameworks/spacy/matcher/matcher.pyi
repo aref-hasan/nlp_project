@@ -1,0 +1,1 @@
+../../../Resources/spacy/matcher/matcher.pyi
